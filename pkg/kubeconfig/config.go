@@ -6,9 +6,14 @@ import (
 	"path/filepath"
 )
 
-// HomeDir 项目跟目录
+// HomeDir 用户根目录，-需修改
 func HomeDir() string {
 	return "/Users/fnngj/"
+}
+
+// apiServer 地址 查看 ~/.kube/config 文件
+func KubeHost() string {
+	return "127.0.0.1:6443"
 }
 
 // 返回 kube 配置文件路径
